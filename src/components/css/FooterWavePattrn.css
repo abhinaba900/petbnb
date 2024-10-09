@@ -1,0 +1,37 @@
+﻿.footer-wave-pattern-wrapper {
+  position: relative;
+  margin-top: var(--common-top-spacing);
+  margin-bottom: -6.25rem;
+  overflow-x: hidden;
+}
+
+.bottom-banner-svg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 18%;
+  left: 0;
+}
+
+.bottom-banner-svg-background {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 697px) and (max-width:930px) {
+  .footer-wave-pattern-wrapper {
+    margin-bottom: -4.25rem;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 696px) {
+  .footer-wave-pattern-wrapper {
+    margin-bottom: -1.25rem;
+  }
+}
+
+@media (max-width: 529px) {
+  .footer-wave-pattern-wrapper {
+    margin-bottom: -1.25rem;
+  }
+}

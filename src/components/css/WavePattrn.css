@@ -1,0 +1,44 @@
+﻿.wave-pattern-wrapper {
+  position: relative;
+  top: -7.25rem;
+}
+
+.wave-pattern-wrapper .bottom-banner-svg-background {
+  position: relative;
+}
+
+.wave-pattern-wrapper .bottom-banner-svg {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .wave-pattern-wrapper {
+    top: -5.25rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wave-pattern-wrapper {
+    top: -2.25rem;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+  .wave-pattern-wrapper {
+    top: -4rem;
+  }
+}
+
+@media (max-width: 659px) {
+  .wave-pattern-wrapper {
+    top: -2.25rem;
+  }
+
+  .wave-pattern-wrapper .bottom-banner-svg {
+    top: 0.5rem;
+  }
+}

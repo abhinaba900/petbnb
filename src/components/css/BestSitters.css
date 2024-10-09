@@ -1,0 +1,27 @@
+﻿.best-sitters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem !important;
+  margin-top: 8rem;
+  margin-bottom: var(--common-bottom-spacing);
+  background-color: #4f006d;
+  color: white;
+  text-align: center;
+ overflow-y: hidden;
+  padding-top: var(--common-top-spacing);
+  padding-bottom: var(--common-bottom-spacing);
+}
+
+.best-sitters .container {
+  width: 100%;
+
+  gap: 1rem !important;
+}
+
+.best-sitters .section-title {
+  font-weight: var(--font-weight-400);
+  color: white;
+}
+
+

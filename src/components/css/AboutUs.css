@@ -1,0 +1,289 @@
+﻿@import url(../../index.css);
+
+.about-us {
+  margin-top: -5rem;
+  padding-top: 2rem;
+  padding-bottom: var(--common-bottom-spacing);
+}
+
+.about-us .banner-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-us .banner-img-wrapper .relative-imgs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-us .banner-img-wrapper .relative-imgs .top-left-image {
+  display: block;
+  position: absolute;
+  top: -12%;
+  left: 5%;
+  width: 100%;
+  max-width: 72px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.about-us .banner-img-wrapper .relative-imgs .main-image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-7.5%, -51.5%);
+  width: 100%;
+  max-width: 560px !important;
+  height: 535px;
+  object-fit: contain;
+}
+
+/* .about-us .banner-img-wrapper .relative-imgs .border-image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  bottom: 0;
+  transform: translate(-0%, -50%);
+  max-width: 480px;
+  width: 100%;
+  object-fit: cover;
+} */
+
+/* .about-us .banner-img-wrapper .float-banner-img {
+  position: absolute;
+  height: fit-content;
+  top: 53%;
+  left: 15%;
+  max-width: 230px !important;
+  max-height: 280px !important;
+  height: 100%;
+  width: 100%;
+} */
+.about-us .content-heading-wrapper {
+  /* margin-top: 3rem; */
+}
+
+.about-us .content-heading-wrapper .banner-title-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-us .content-heading-wrapper .banner-title-wrapper .about-us-title {
+  font-family: var(--main-font-family);
+  font-weight: var(--font-weight-700);
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #263542;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.about-us .content-heading-wrapper .banner-title-wrapper .about-us-heading {
+  font-family: var(--main-font-family);
+  font-weight: var(--font-weight-700);
+  font-size: var(--common-heading-font-size);
+  line-height: var(--common-heading-line-height);
+  color: var(--common-text-color-heading);
+}
+
+.about-us .content-heading-wrapper .banner-title-wrapper .about-us-paragraph {
+  width: 31.7rem;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--font-weight-400);
+  font-size: var(--common-paragraph-font-size);
+  line-height: var(--common-paragraph-line-height);
+  color: #263542;
+}
+
+.about-us .content-heading-wrapper .banner-title-wrapper .about-us-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 3.125rem;
+  background-color: var(--common-button-color);
+  border-radius: 0.313rem;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--font-weight-700);
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.about-us
+  .content-heading-wrapper
+  .banner-title-wrapper
+  .about-us-button
+  .front {
+  width: 100% !important;
+}
+
+.about-us-button .front {
+  transform: translateY(0px);
+}
+
+/* -----responsive----- */
+
+@media (min-width: 1281px) and (max-width: 1369px) {
+  .about-us {
+    max-width: 1356px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .about-us {
+    max-width: 1245px;
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .border-image {
+    display: block;
+    position: absolute;
+    top: 50.5%;
+    left: 9.4%;
+    bottom: 0;
+    transform: translate(-0%, -50%);
+    max-width: 475px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+  .about-us {
+    max-width: 980px;
+    padding-top: var(--common-top-spacing);
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .border-image {
+    max-width: 365px;
+  }
+
+  .about-us .banner-img-wrapper .float-banner-img {
+    top: 58%;
+    left: 18%;
+  }
+
+  .about-us .banner-img-wrapper .float-banner-img svg {
+    max-width: 178px;
+  }
+
+  .about-us .banner-img-wrapper {
+    margin-top: -2.5rem;
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .top-left-image {
+    left: -1%;
+    top: -18%;
+  }
+
+  .about-us .content-heading-wrapper .banner-title-wrapper .about-us-paragraph {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 821px) {
+  .about-us {
+    padding-top: 6rem;
+    height: fit-content;
+  }
+
+  .about-us .banner-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .border-image {
+    max-width: 430px;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-52%, -55.5%);
+  }
+
+  .about-us .banner-img-wrapper .float-banner-img {
+    top: 49%;
+    left: 26%;
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .top-left-image {
+    left: 16%;
+    top: -2%;
+  }
+
+  .about-us .content-heading-wrapper {
+    padding-top: 2rem !important;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+  .about-us {
+    padding-top: 6rem;
+    height: fit-content;
+  }
+
+  .about-us .banner-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .border-image {
+    max-width: 430px;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-52%, -55.5%);
+  }
+
+  .about-us .banner-img-wrapper .float-banner-img {
+    top: 49%;
+    left: 26%;
+  }
+
+  .about-us .banner-img-wrapper .relative-imgs .top-left-image {
+    left: 16%;
+    top: -2%;
+  }
+
+  .about-us .content-heading-wrapper {
+    padding-top: 2rem !important;
+  }
+
+  .about-us .content-heading-wrapper .banner-title-wrapper .about-us-paragraph {
+    width: 90% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .about-us {
+    height: fit-content;
+    margin: 0 auto;
+    padding-top: 0rem;
+  }
+
+  .about-us .content-heading-wrapper .banner-title-wrapper .about-us-paragraph {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}

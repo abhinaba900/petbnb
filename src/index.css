@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* ------root variables------- */
+
+:root {
+  --primary: #fea116;
+  --light: #f1f8ff;
+  --dark: #0f172b;
+  --left-spacing: 4.75rem;
+  --right-spacing: 4.75rem;
+  --nav-link-text-font-size: 1rem;
+  --main-font-family: "Bubblegum Sans";
+  --secondary-font-family: "Noto Sans", sans-serif;
+  --font-weight-700: 700;
+  --font-weight-400: 500;
+  --btn-border-bottom-color: #4f006d;
+  --banner-background-color: #64ccc9;
+
+  --common-button-color: #4F006D;
+
+  --common-text-color-heading: #4f006d;
+  --common-text-color-paragraph: #263542;
+
+  --common-heading-font-size: 3.125rem;
+  --common-heading-line-height: 3.5rem;
+
+  --common-paragraph-font-size: 1.25rem;
+  --common-paragraph-line-height: 1.625rem;
+
+  --common-top-spacing: 4.375rem;
+  --common-bottom-spacing: 3.375rem;
+
+  --common-section-heading-font-size: 0.875rem;
+  --common-section-heading-line-height: 1.125rem;
+  --common-section-heading-color: #263542;
+  --common-section-heading-opacity: 0.7;
+
+  --form-font-size: 0.875rem;
+
+  --mobile-heading-font-size: 1.5rem;
+  --mobile-heading-line-height: 1.75rem;
+  --mobile-paragraph-font-size: 0.675rem;
+}
+
+/* remove the scroll bar */
+/* ::-webkit-scrollbar {
+  display: none;
+} */

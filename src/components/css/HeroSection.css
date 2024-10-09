@@ -1,0 +1,597 @@
+﻿.banner {
+  background-color: var(--banner-background-color);
+  padding-top: var(--common-top-spacing);
+  padding-bottom: 12rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.form-heading-wrapper .banner-title-wrapper h1 {
+  font-family: var(--main-font-family);
+  font-weight: var(--font-weight-400);
+  font-size: var(--common-heading-font-size);
+  color: var(--common-text-color-heading);
+  line-height: var(--common-heading-line-height);
+  line-break: anywhere;
+  white-space: nowrap;
+}
+
+.form-heading-wrapper .banner-title-wrapper p {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--font-weight-400);
+  font-size: var(--nav-link-text-font-size);
+  color: #263542;
+  line-height: var(--common-paragraph-line-height);
+  line-break: anywhere;
+  white-space: nowrap;
+}
+
+.banner-img-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 3rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .banner-img-wrapper .sul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} */
+
+.error-message-wrapper {
+  display: grid;
+  place-items: center;
+  margin-top: -0.5rem;
+}
+
+.mb-negative {
+}
+
+.banner-img-wrapper .absolute-svg {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.banner-img-wrapper .float-banner-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  transform: translate(-30%, -30%);
+  z-index: -1;
+}
+
+/* .custom-width {
+  width: 100%;
+  max-width: 40em;
+}
+
+.castom-width-left {
+  width: 100%;
+  max-width: 42em;
+} */
+
+.form-wrapper {
+  width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.form-wrapper .form-control {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 1px solid #7d4bf5;
+}
+
+.form-check-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.313rem;
+  width: 100%;
+  max-width: 7.5rem;
+  height: 3.75rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.form-check-container-parent .form-check-container-parent-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.68rem;
+  margin: auto;
+}
+
+.form-check-container:hover {
+  background-color: #e0e0e0;
+}
+
+.form-check-container .form-check-sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: -1;
+}
+
+.form-check-container .form-check-sub-container p {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--font-weight-700);
+  font-size: var(--form-font-size);
+  color: #263542;
+  line-break: anywhere;
+  cursor: pointer;
+}
+
+.form-check-container.active-form {
+  background-color: var(--common-button-color);
+}
+
+.form-check-container.active-form p {
+  color: white;
+}
+
+.form-check-container-parent p {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--font-weight-400);
+  font-size: var(--form-font-size);
+  color: #263542;
+  line-break: anywhere;
+}
+
+.form-check-container-parent .form-check-sub-container-loc-and-date {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-container-parent .form-check-sub-container-loc-and-date svg {
+  position: absolute;
+  left: 10px; /* Adjust based on padding */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent clicking on the SVG */
+  z-index: 1;
+}
+
+.form-check-container-parent .form-check-sub-container-loc-and-date input {
+  width: 12.5rem;
+  max-width: 12.5rem;
+  padding-left: 2.188rem;
+  /* padding-right: 0.625rem; */
+  height: 2.25rem;
+  max-height: 2.188rem;
+  border: 1px solid #ccc;
+  border-radius: 0.313rem;
+  font-size: 0.875rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Override the background of the PrimeReact Calendar */
+.p-datepicker {
+  background-color: white !important;
+  padding: 0.5rem !important;
+  border-radius: 0.313rem !important;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+
+/* Optional: Also set the background color of the header, buttons, and cells */
+
+.p-datepicker-header {
+  background-color: white !important;
+  width: 100% !important;
+}
+
+.p-datepicker-calendar td,
+.p-datepicker-calendar th {
+  background-color: white !important;
+  border: none !important;
+  padding: 0.3rem !important;
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+}
+
+.form-check-container-parent
+  .form-check-sub-container-loc-and-date
+  input[type="date"]::-webkit-calendar-picker-indicator,
+.form-check-container-parent
+  .form-check-sub-container-loc-and-date
+  input[type="date"]::-webkit-inner-spin-button {
+  /* in firefox */
+
+  visibility: hidden;
+}
+
+.search-btn-for-hero-section .front {
+  padding: 0;
+}
+
+.form-check-container-parent
+  .form-check-sub-container-loc-and-date
+  input[type="date"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  z-index: 2; /* Overlay to block access to native date picker */
+  pointer-events: none; /* Disable pointer events */
+}
+.form-check-container-parent
+  .form-check-sub-container-loc-and-date
+  input:focus {
+  border-color: #999;
+}
+
+.form-check-container-parent .search-btn {
+  width: 100%;
+  max-width: 12.5rem !important;
+  font-size: 0.875rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.form-check-container-parent .navBtn {
+  width: 100%;
+  max-width: 12.5rem !important;
+}
+
+.form-check-container:hover,
+.form-check-container:hover p,
+.form-check-container:hover .svg-icon-fill {
+  background-color: var(--common-button-color);
+  color: white;
+  fill: white;
+}
+@media (min-width: 1369px) and (max-width: 1440px) {
+  .form-check-container .form-check-sub-container p {
+    font-size: 0.875rem !important;
+  }
+
+  .form-check-container {
+    max-width: 7.136em;
+  }
+  .form-check-container-parent .form-check-sub-container-loc-and-date input {
+    width: 11.8rem;
+  }
+
+  .banner-img-wrapper .relative-imgs .background-svg {
+    left: 11.8%;
+  }
+}
+
+@media (min-width: 1335px) and (max-width: 1369px) {
+  .form-check-container {
+    max-width: 6.675rem;
+  }
+
+  .form-check-container-parent .form-check-sub-container-loc-and-date input {
+    width: 11.2rem;
+  }
+
+  .form-check-container .form-check-sub-container p {
+    font-size: 0.875rem !important;
+  }
+}
+
+@media (min-width: 1292px) and (max-width: 1334px) {
+  .form-check-container .form-check-sub-container p {
+    font-size: 0.775rem !important;
+  }
+  .form-check-container {
+    max-width: 6.135rem;
+  }
+
+  .banner-img-wrapper {
+    margin-top: 2rem;
+  }
+
+  .form-check-container-parent .form-check-sub-container-loc-and-date input {
+    width: 10.2rem;
+    font-size: 0.775rem;
+  }
+
+  .banner-img-wrapper .relative-imgs .absolute-svg {
+    max-width: 30rem;
+    object-fit: contain;
+  }
+
+  .banner-img-wrapper .relative-imgs .background-svg {
+    max-width: 26rem;
+    object-fit: contain;
+    top: 7.5%;
+    left: 15.5%;
+  }
+
+  .banner-img-wrapper .float-banner-img {
+    transform: translate(-28%, -33%);
+  }
+
+  .banner-img-wrapper .float-banner-img svg {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1291px) {
+  .form-check-container .form-check-sub-container p {
+    font-size: 0.875rem !important;
+  }
+  .form-check-container {
+    max-width: 6.135em;
+  }
+
+  .form-check-container-parent .form-check-sub-container-loc-and-date input {
+    width: 9.8rem;
+    font-size: 0.775rem;
+  }
+
+  .banner-img-wrapper {
+    margin-top: 2rem;
+  }
+
+  .banner-img-wrapper .float-banner-img {
+    transform: translate(-24%, -30%);
+  }
+
+  .form-control {
+    max-width: 100%;
+    height: 100% !important;
+  }
+
+  .form-check-container-parent {
+    flex-wrap: wrap;
+  }
+
+  .form-check-container-parent .form-check-container-parent-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .form-control,
+  .form-wrapper {
+    max-width: 100%;
+    height: 100% !important;
+  }
+
+  .form-check-container-parent .search-btn {
+    max-width: 10.8rem !important;
+  }
+
+  .form-check-container-parent .navBtn {
+    max-width: 10.8rem !important;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+  .banner {
+    padding-bottom: 15rem;
+  }
+
+  .form-check-container {
+    max-width: 6.675rem;
+  }
+
+  .form-check-container-parent {
+    flex-wrap: wrap;
+  }
+  .form-check-container-parent .form-check-sub-container-loc-and-date input {
+    width: 11.8rem;
+  }
+
+  .form-check-container-parent .form-check-container-parent-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .banner-img-wrapper {
+    margin-top: 2rem;
+  }
+
+  .banner-img-wrapper .background-svg {
+    max-width: 19em !important;
+  }
+
+  .form-control {
+    max-width: 100%;
+    height: fit-content !important;
+  }
+
+  .form-wrapper .input-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .banner-img-wrapper .relative-imgs .background-svg {
+    max-width: 22rem;
+    object-fit: contain;
+  }
+
+  .banner-img-wrapper .float-banner-img {
+    transform: translate(-40%, -38%);
+  }
+
+  .banner-img-wrapper .float-banner-img svg {
+    max-width: 15rem;
+  }
+
+  .form-heading-wrapper .banner-title-wrapper h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .form-heading-wrapper .banner-title-wrapper p {
+    font-size: 0.789rem !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 821px) {
+  .banner .form-heading-wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+    text-align: left;
+  }
+
+  .banner {
+    padding-bottom: 8rem;
+  }
+
+  .banner-img-wrapper .absolute-svg {
+    max-width: 100% !important;
+  }
+
+  .banner-img-wrapper .float-banner-img {
+    transform: translate(-26%, -34%);
+  }
+
+  .banner-img-wrapper .float-banner-img svg {
+    max-width: 20rem;
+  }
+
+  .banner-img-wrapper {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .form-heading-wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+    text-align: left;
+  }
+
+  .banner {
+    padding-bottom: 8rem;
+    padding-left: 0;
+  }
+
+  .banner-img-wrapper .absolute-svg {
+    max-width: 100% !important;
+  }
+
+  .banner-img-wrapper .float-banner-img {
+    transform: translate(-26%, -34%);
+  }
+
+  .banner-img-wrapper .float-banner-img svg {
+    max-width: 20rem;
+  }
+
+  .banner-img-wrapper {
+    margin-top: 4rem;
+  }
+
+  .form-heading-wrapper .banner-title-wrapper h1,
+  .form-heading-wrapper .banner-title-wrapper p {
+    white-space: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-check-container-parent {
+    flex-wrap: wrap;
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .form-wrapper {
+    height: 100% !important;
+  }
+
+  .form-check-container-parent .form-check-container-parent-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .banner .form-heading-wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+    text-align: left;
+  }
+
+  .banner {
+    padding-bottom: 8rem;
+    padding-left: 0;
+  }
+
+  .banner-img-wrapper .absolute-svg {
+    max-width: 100% !important;
+  }
+
+  .banner-img-wrapper .float-banner-img {
+    transform: translate(-26%, -34%);
+  }
+
+  .banner-img-wrapper .float-banner-img svg {
+    max-width: 20rem;
+  }
+
+  .banner-img-wrapper {
+    margin-top: 4rem;
+  }
+
+  .form-heading-wrapper .banner-title-wrapper h1,
+  .form-heading-wrapper .banner-title-wrapper p {
+    white-space: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-check-container-parent {
+    flex-wrap: wrap;
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  .form-wrapper {
+    height: 100% !important;
+  }
+
+  .form-check-container-parent .form-check-container-parent-wrapper {
+    flex-wrap: wrap;
+  }
+}
